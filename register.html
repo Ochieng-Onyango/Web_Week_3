@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+<p>
+    <strong>
+        Type your first and last name.
+    </strong>
+</p>
+    <form action="/register" method="post">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="e.g Ochieng Onyango" id="name" name="name" required><br>
+<p>
+    <strong>
+        Select your date of birth.
+    </strong>
+</p>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+<p>
+    <strong>
+        Please indicate your gender.
+    </strong>
+</p>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="custom">Rather not say</label><br>
+<p>
+    <strong>
+        Currest residential address.
+    </strong>
+</p>
+        <label for="address">Address:</label>
+        <textarea id="address" placeholder="00100-Nairobi, Kenya" name="address" rows="2" cols="10" required></textarea><br>
+<p>
+    <strong>
+        Add your phone number.
+    </strong>
+</p>
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" placeholder="+254 123456789" name="telephone" required><br>
+<p>
+    <strong>
+        Please type you email address.
+    </strong>
+
+</p>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="example@email.com" name="email" required><br>
+<p>
+    <strong>
+        Select the course you are interested in.
+    </strong>
+</p>
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+        </select><br>
+<p>
+    <strong>
+        When you are sure the details are correct, click "Register". Or click "Cancel" to redo.
+    </strong>
+</p>
+        <input type="submit" value="Register">
+        <input type="button" value="Cancel">
+    </form>
+</body>
+</html>
